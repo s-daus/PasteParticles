@@ -1,0 +1,7 @@
+CopyPasteDataGenerator/.idea/
+CopyPasteDataGenerator/mask_areas.csv
+CopyPasteDataGenerator/synthetic_images/
+CopyPasteDataGenerator/utils/__pycache__/
+devs.log
+poetry.lock
+
