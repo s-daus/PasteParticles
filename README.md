@@ -1,8 +1,8 @@
-[![Paper (Powder Technology)](https://doi.org/10.1016/j.powtec.2024.119884/)]
+[Paper (Powder Technology)] (https://doi.org/10.1016/j.powtec.2024.119884)
 
 # Synthetic Data Generation with Copy-Paste Augmentation
 
-This repository belongs to the research paper "In-line image analysis of particulate processes with deep learning: Optimizing training data generation via copy-paste augmentation." It provides the python scripts for synthetic image data generation for training semantic or instance segmentation models for in-line data of particles. It provides the Python scripts to generate synthetic image data for training semantic or instance segmentation models for in-line particle data. The idea is to build an image database by extracting object instances at low solid concentrations where particles are easier to detect. The image database is used to generate synthetic images at higher concentrations with ground truth labels via Copy-Paste augmentation. The resulting data can be used directly to train semantic and instance segmentation models. This repository only contains the scripts for the synthetic image generation based on an existing image database. For more information regarding obtaining the image database with conventional image segmentation and training a Mask R-CNN model, see the additional supplementary data of the publication :[here](https://opara.zih.tu-dresden.de/items/26ec6a28-37ef-4066-bead-2e955cbf1c34)
+This repository belongs to the research paper "In-line image analysis of particulate processes with deep learning: Optimizing training data generation via copy-paste augmentation." It provides the Python scripts to generate synthetic image data for training semantic or instance segmentation models for in-line particle data. The idea is to build an image database by extracting object instances at low solid concentrations where particles are easier to detect. The image database is used to generate synthetic images at higher concentrations with ground truth labels via Copy-Paste augmentation. The resulting data can be used directly to train semantic and instance segmentation models. This repository only contains the scripts for the synthetic image generation based on an existing image database. For more information regarding obtaining the image database with conventional image segmentation methods and training a Mask R-CNN model, see the additional supplementary data of the publication: [here](https://opara.zih.tu-dresden.de/items/26ec6a28-37ef-4066-bead-2e955cbf1c34)
  
 ## Setup
 
@@ -14,12 +14,12 @@ poetry install
 
 ## Configuration
 
-The generation process is defined by parameters in the config_file.json. You can adjust these parameters directly within the JSON file or use config_file_writing.py to programmatically generate a new configuration. The script also contains further information on the purpose of each parameter. The config_file.json contains default values for all parameters. 
+The generation process is defined by parameters in the config_file.json. You can adjust these parameters directly within the JSON file or use config_file_writing.py to generate a new configuration. The script also contains further information on the purpose of each parameter. The config_file.json contains default values for all parameters. 
 Key Parameters:
 
 Image Database: The image_database folder contains instances of bubbles and particles as used in our paper. These instances form the basis for synthetic image generation.
 
-Mask Areas: For new image databases, it's necessary to create a mask_areas.csv file using create_maskareas_csv.py. This file records the pixel area of each mask, heping to efficiently select  objects based on the desired area fraction of objects in the generated images.
+Mask Areas: For new image databases, it's necessary to create a mask_areas.csv file using create_maskareas_csv.py. This file records the pixel area of each mask, heping to efficiently select objects based on the desired area fraction of objects in the generated images.
 
 
 ## Advanced Usage
