@@ -1,4 +1,4 @@
-[Paper (Powder Technology)] (https://doi.org/10.1016/j.powtec.2024.119884)
+[Paper (Powder Technology)](https://doi.org/10.1016/j.powtec.2024.119884)
 
 # Synthetic Data Generation with Copy-Paste Augmentation
 
